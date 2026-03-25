@@ -1,0 +1,97 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 6rem;
+}
+
+.info {
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem;
+}
+
+.address {
+  color: #6b7280;
+  margin: 0 0 0.25rem;
+}
+
+.contact {
+  color: #9ca3af;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.passBtn {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.15s;
+}
+
+.passBtn:hover {
+  background: #eff6ff;
+}
+
+.seatsSection {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 1rem 0.5rem;
+}
+
+/* 하단 고정 예약 바 */
+.reserveBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.reserveBtn {
+  padding: 0.65rem 2rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.reserveBtn:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.reserveBtn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
