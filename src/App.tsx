@@ -10,6 +10,8 @@ import BranchDetailPage from './pages/member/BranchDetailPage';
 import MyPassesPage from './pages/member/MyPassesPage';
 import MyReservationPage from './pages/member/MyReservationPage';
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
+import SignUpPage from './pages/SignUpPage';
+import OAuth2CallbackPage from './pages/OAuth2CallbackPage';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           {/* 공개 페이지 */}
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/oauth2/callback" element={<OAuth2CallbackPage />} />
           <Route path="/branches" element={<BranchListPage />} />
           <Route path="/branches/:branchId" element={<BranchDetailPage />} />
 

@@ -53,13 +53,14 @@
   gap: 0.4rem;
 }
 
-.field label {
+.field > label {
   font-size: 0.875rem;
   font-weight: 600;
   color: #374151;
 }
 
-.field input {
+.field input[type='text'],
+.field input[type='password'] {
   padding: 0.65rem 0.875rem;
   border: 1px solid #d1d5db;
   border-radius: 8px;
@@ -68,9 +69,32 @@
   transition: border-color 0.15s;
 }
 
-.field input:focus {
+.field input[type='text']:focus,
+.field input[type='password']:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* 성별 라디오 그룹 */
+.genderGroup {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.genderOption {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+.genderOption input[type='radio'] {
+  accent-color: #2563eb;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
 .submitBtn {
@@ -95,94 +119,22 @@
   cursor: not-allowed;
 }
 
-/* 회원가입 링크 */
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   font-size: 0.875rem;
   color: #6b7280;
 }
 
-.signupLink {
+.loginLink {
   color: #2563eb;
   font-weight: 600;
   text-decoration: none;
 }
 
-.signupLink:hover {
+.loginLink:hover {
   text-decoration: underline;
-}
-
-/* 구분선 */
-.divider {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 1.75rem 0 1.25rem;
-  color: #9ca3af;
-  font-size: 0.8rem;
-}
-
-.divider::before,
-.divider::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: #e5e7eb;
-}
-
-/* SNS 버튼 공통 */
-.snsButtons {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.snsButtons button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.625rem;
-  width: 100%;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: filter 0.15s;
-}
-
-.snsButtons button:hover {
-  filter: brightness(0.95);
-}
-
-/* 카카오 */
-.kakaoBtn {
-  background: #FEE500;
-  color: #3C1E1E;
-}
-
-/* 네이버 */
-.naverBtn {
-  background: #03C75A;
-  color: white;
-}
-
-/* 구글 */
-.googleBtn {
-  background: white;
-  color: #374151;
-  border: 1px solid #d1d5db !important;
-}
-
-/* SNS 회원가입 안내 */
-.snsSignupNote {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 0.775rem;
-  color: #9ca3af;
 }
