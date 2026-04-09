@@ -18,7 +18,7 @@ function App() {
     // AuthProvider: 로그인 상태를 앱 전체에서 공유
     <AuthProvider>
       {/* BrowserRouter: URL 기반 페이지 라우팅 */}
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Header />
         <Routes>
           {/* 공개 페이지 */}
